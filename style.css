@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+body,html{
+    height: 100%;
+    width: 100%;
+}
+#main{
+    height: 100%;
+    width: 100%;
+    background-color: white;
+}
+#circle{
+    position: absolute;
+    /* background-color: red; */
+    height: 200vh;
+    width: 200vh;
+    border-radius: 50%;
+    transform: translate(0,-50%) rotate(100deg);
+    left: -100vh;
+    top: 50%;
+    border: 2px solid #dadada;
+}
+.stripe{
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(0,-50%) ;
+    transform-origin: 0% 50%;
+    height: 60px;
+    width: 100%;
+    /* background-color: rgb(180, 185, 41); */
+}
+.str1{
+    transform: translate(0,-50%) rotate(-20deg);
+}
+.str2{
+    transform: translate(0,-50%) rotate(-10deg);
+}
+.str4{
+    transform: translate(0,-50%) rotate(10deg);
+}
+.str5{
+    transform: translate(0,-50%) rotate(20deg);
+}
+.first{
+    position: relative;
+    width: 50%;
+    height: 100%;
+    /* background-color: aqua; */
+}
+.sec{
+    padding-left: 30px;
+    width: 50%;
+    height: 100%;
+    /* background-color: rgb(26, 199, 95); */
+}
+.sec h4{
+    font-size: 2vw;
+}
+.sec h6{
+    font-size: 1vw;
+    opacity: .5;
+    font-weight: 500;
+}
+.smcircle{
+    position: absolute;
+    top: 50%;
+    right:-.25vw;
+    height: .5vw;
+    width: .5vw;
+    background-color: #777;
+    transform: translate(0,-50%);
+    border-radius: 50%;
+
+}
+
+#panel{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    top: 50%;
+    right: 3%;
+    transform: translate(0,-50%);
+    width: 5%;
+    height: 20%;
+
+}
+.mncircel{
+    height: 1vw;
+  cursor: pointer;
+    width: 1vw;
+    border-radius: 50%;
+    background-color: gray;
+    opacity: .2;
+}
